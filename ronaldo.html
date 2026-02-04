@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Allays Page</h2>
+        <h2>join() and pop()</h2>
+        <p>This is the Allays HTML page.</p>
+        <p id="my join"></p>
+        <p id="my first pop"></p>
+        <p id="my second pop"></p>
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("my join").innerHTML = fruits.join(" * ");
+            document.getElementById("my first pop").innerHTML = fruits;
+            fruits.pop();
+            document.getElementById("my second pop").innerHTML = fruits;
+            </script>
+    </body>
+</html>
