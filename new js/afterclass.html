@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>After Class</title>
+    </head>
+    <body>
+        <p>After Class</p>
+        <button onclick="ascendingOrders()">Ascending Order</button>
+            <button onclick="descendingOrders()">Descending Order</button>
+        <h2>After Class</h2>
+        <p id="product_value"></p>
+        <script>
+        var numbers = [28,6,19,95];
+        function myFunction(num) {
+            return num * 999;
+        }
+        function ascendingOrders() {
+            numbers.sort(function(a, b) {return a - b});
+            document.getElementById("product_value").innerHTML = numbers;
+        }
+        function descendingOrders() {
+            numbers.sort(function(a, b) {return b - a});
+            document.getElementById("product_value").innerHTML = numbers;
+        }
+        </script>
+    </body>
+</html>
