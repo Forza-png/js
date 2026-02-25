@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Map Function</h2>
+        <h1 id="result"></h1>
+        
+
+    <script>
+         async function add(a,b) {
+            let response = await a + b;
+            display(response);
+         }
+            function display(response) {
+                document.getElementById("result").innerHTML = response;
+
+
+            
+         }
+
+         add(4,6);
+    </script>
+    </body>
+</html>

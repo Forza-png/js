@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Map Function</h2>
+        <p id="demo"></p>
+        <script>
+            function myDisplayer(some) {
+                document.getElementById("demo").innerHTML = some;
+            }
+
+            function sum(a,b) {
+                var sum = a + b;
+                myDisplayer(sum);
+            }
+
+            let mypromise = new Promise(function(myResolve, myReject) {
+                let x = 0;
+
+                if(x == 0)  {
+                    myResolve("OK");
+                } else {
+                    myReject("Error");
+                }
+                });
+
+                //consuming code - must wait `then()` for the promise to resolve
+                myPromise.then(
+
+                        function (value) { sum(5, 5); }, // code is successful
+
+                        function (error) { sum(error); } // code is error
+
+                    );
+            
+        </script>
+    </body>
+</html>
